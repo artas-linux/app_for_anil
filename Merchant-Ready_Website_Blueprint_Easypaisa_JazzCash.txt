@@ -1,0 +1,117 @@
+﻿Merchant-Ready Website Blueprint
+For Easypaisa & JazzCash Approval • IT Services (SMC-Private Limited)
+Prepared on: 04 Oct 2025
+
+
+Purpose
+This document gives your web developer a precise specification to build a low-risk, compliant website that aligns with your SECP objects and satisfies the checklist typically used by Easypaisa/JazzCash merchant onboarding teams.
+1) Business Model (Low-Risk, IT-Services)
+* Software & Web Development: corporate websites, e-commerce builds, custom apps, API & payment integrations.
+* SaaS / Licenses: hosted tools (ticketing, CRM lite, inventory), monthly/annual billing.
+* Maintenance & Support Plans: Bronze/Silver/Gold with fixed PKR pricing and clear response times.
+* Training & Consulting: short courses, corporate training, hourly consulting (scope-bound).
+* Hosting & Domains (Reseller): pricing and renewal terms clearly published.
+* Optional Hardware/Peripherals only if actually supplied: show models, warranties, and delivery terms.
+* Explicitly exclude high-risk use cases: wallets, remittances, forex/CFD/crypto, gambling, donations, third-party payouts.
+2) Site Map & Mandatory Pages
+* Home: value proposition, starter prices, strong call-to-action.
+* Products/Services: itemized SKUs with PKR prices, features, and delivery timelines.
+* Order / Checkout Demo: simple flow with test item (can be offline until gateway live).
+* About Company: legal name (as per SECP), incorporation number, NTN, registered address.
+* Contact: phone, support email (e.g., support@yourdomain.com), office map, response hours.
+* Terms & Conditions: scope, IP ownership, acceptance/sign-off, warranty, support limits.
+* Refund & Cancellation Policy: windows, pro-rata logic, method and timing of refunds.
+* Privacy Policy: data collected, purpose, retention, deletion contact.
+* Delivery Policy (Digital): how work is delivered (repo, email, deployment), typical timelines.
+* Pricing/Taxes: PKR, inclusive/exclusive of sales tax, STRN shown if registered.
+* FAQ: payment, invoices, support hours, escalation contacts.
+* Portfolio/Case Studies: 3–6 projects, screenshots, testimonials (with permission).
+* Compliance/AUP: statement that prohibited categories are not accepted.
+Technical Basics
+* SSL (HTTPS) enforced, no mixed-content warnings.
+* Functional domain (no “coming soon”).
+* Working contact form and business email (no personal Gmail for support).
+* Visible sample invoice screenshot (company name, NTN, unique invoice number, amount).
+* Footer: © YEAR • Legal Name (SMC-Pvt) • SECP/NTN • links to all policies.
+3) Product & Pricing Examples (Edit as Needed)
+* Starter Website — PKR 65,000: up to 5 pages, responsive design, 2 revisions, 2-week delivery.
+* E-Commerce Launch — PKR 145,000: up to 20 products, payment integration, shipping rules, training.
+* Custom API Integration — from PKR 80,000: discovery + SRS + implementation + testing.
+* Android/iOS App (MVP) — from PKR 350,000: scoped features, 8–10 weeks.
+* Maintenance Plans: Bronze PKR 7,500/mo (2 hrs), Silver PKR 18,000/mo (6 hrs), Gold PKR 35,000/mo (12 hrs, priority).
+* Training: Web Dev Bootcamp (12 hrs) PKR 18,000/person; Corporate On-Site PKR 55,000/day.
+Each product card should show:
+* Deliverables, timeline, revision limits, acceptance/sign-off steps.
+* Clear PKR price and tax note (NTN/STRN).
+* “Add to Cart” or “Pay Invoice” button linking to checkout/demo.
+4) Copy-and-Paste Policy Templates
+Refund & Cancellation
+Services not started: full refund within 7 days of payment. Services in progress: pro-rata refund for unconsumed scope; discovery/SRS time is non-refundable. Digital licenses/hosting once provisioned: non-refundable for the current billing cycle. Refund method: original payment route within 7–10 business days. For disputes, contact billing@yourdomain.com; we respond within 48 business hours.
+Delivery (Digital Services)
+Websites/apps are delivered via a staging server or repository. Acceptance occurs on UAT sign-off. Licenses are provisioned within 24–72 hours after payment confirmation. Training is delivered on scheduled dates shared by email/calendar invite.
+Acceptable Use / Prohibited Payments
+We process payments only for our own IT services and products. We do not accept payments for crypto, forex/CFD, binary options, remittances/wallet top-ups, person-to-person transfers, gambling, adult content, firearms, pharmaceuticals, donations/charity, or any third-party settlements.
+Privacy (Summary)
+We collect name, email, phone, and billing address for invoicing and support. Data is not sold. Third-party processors are limited to payment and hosting providers. Data retention follows applicable tax laws. Deletion requests can be sent to privacy@yourdomain.com.
+5) Documents to Prepare for Merchant Onboarding
+* SECP Certificate of Incorporation (SMC-Pvt).
+* Latest forms listing director/beneficial owner (e.g., Form-29/30 or equivalent).
+* NTN certificate (and STRN if registered).
+* Bank account letter or cancelled cheque — account title must match company name.
+* Authorized signatory CNIC + authorization letter.
+* Website URL (live) + test order page.
+* Business profile (2–3 pages): services, clients, screenshots.
+* Sample invoice and Service Agreement/SoW template.
+* Support SOP: response times and escalation contacts.
+Pro Tips
+* Use a .com.pk/.pk or clean .com; make WHOIS/admin email align with your company.
+* Ensure settlement bank account name exactly matches SECP company name.
+* Add Google Business Profile or office photos for credibility on the Contact page.
+6) Checkout & Tech Readiness (Before Applying)
+* Unique sequential Order IDs stored server-side.
+* Webhook/Return URLs prepared: /payment/success, /payment/fail, /payment/webhook.
+* Verify HMAC/signatures if provided by gateway; server clock in UTC.
+* HTTPS enforced; TLS 1.2+; send receipt page + email with invoice no., amount, timestamp, and support contact.
+* Create a test page (/checkout/demo) with a Rs. 10/50 sandbox item.
+* Cookie consent banner and privacy link in footer of every page.
+7) Domain & Branding Suggestions
+Select a short, neutral, IT-centric brand. Avoid keywords like invest/forex/crypto. Create mailboxes: billing@, support@, privacy@.
+* CodeVerge Solutions
+* Nexacode Labs
+* ByteFoundry Solutions
+* OrbitLogic Systems
+* DevHarbor Technologies
+* Craftware Studios
+* GridNexus Solutions
+* StackPilot Systems
+* Softloom Technologies
+* Appsmith Labs
+* NovaLayer Solutions
+* VectorPeak Technologies
+* SiteForge Studios
+* BlueBracket Labs
+* PixelRaft Systems
+* CodeChisel Solutions
+* BrightNest Technologies
+* CoreOrbit Labs
+* HexaBridge Systems
+* PrimeBit Solutions
+8) Homepage Copy (Ready to Use)
+Hero (H1): “Modern websites, custom apps, and API integrations—delivered fast and supported locally.”
+Primary CTAs: Get a Quote → /contact  •  Pay Invoice → /pay
+Trust Row: SECP-registered (SMC-Pvt) • NTN ####### • Serving SMEs since 20XX • Process-Driven Delivery
+Badge Line: “Payments processed by licensed providers.”
+9) Red Flags That Trigger Rejections
+* Wording like: top-ups, deposits, trading accounts, crypto, forex, binary, payouts to users, remittance, donations, lottery.
+* No prices, hidden/refund policy, or “Contact for price” everywhere.
+* Personal email only, no physical address, broken pages, parked/placeholder site.
+* Account title different from company name, or attempting third-party settlements.
+10) Submission Checklist (For Go-Live)
+* [ ] Domain live, SSL, all policy pages visible
+* [ ] Fixed-price SKUs in PKR with features & deliverables
+* [ ] Refund / Privacy / Delivery / Terms published
+* [ ] Contact page with phone, email, address, map, business hours
+* [ ] Demo checkout page and sample invoice
+* [ ] Company details in footer (legal name, SECP no., NTN)
+* [ ] Docs folder: SECP, NTN, bank letter, signatory CNIC, authorization
+* [ ] No banned categories anywhere on site or socials

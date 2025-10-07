@@ -1,50 +1,36 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 1.0.0 → 2.0.0
+- Change Type: MAJOR (Principles expanded and restructured for clarity)
+- Summary: The constitution has been updated to a more detailed and structured format based on the new blueprint. It now includes explicit principles for Design, Content Architecture, SEO, and Technical Standards.
+- Templates requiring updates:
+  - ✅ Aligned: .specify/templates/spec-template.md (The recent update is still consistent with this more detailed constitution)
+  - ⚠ pending: .specify/templates/plan-template.md (Needs to be updated to reflect the new, specific technical standards and content architecture)
+  - ⚠ pending: .specify/templates/tasks-template.md (Needs to be updated to better map tasks to the new content architecture and SEO requirements)
+- Follow-up TODOs: None
+-->
+# Merchant-Ready Website Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Vision & Design
+The project's vision is to build a professional, trustworthy, and compliant IT services website optimized for Easypaisa/JazzCash merchant approval. The design MUST be clean, modern, responsive (HTML5/CSS3 only), and accessible (WCAG-compliant), with subtle animations and clear trust indicators (SECP/NTN badges).
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Content Architecture
+The website MUST feature a specific content architecture. This includes: a Homepage with a clear value proposition and CTAs; a Services page detailing all offerings; a transparent Pricing page with PKR values; an About Us page with legal details; a Portfolio; mandatory Policy pages (Refund, Delivery, Privacy, AUP); a Contact page; and a functional Checkout Demo.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. SEO & Technical Standards
+All content MUST adhere to a defined SEO strategy, including target keywords, single H1 per page, alt text on images, and a sitemap. The technical stack is strictly **Static HTML + CSS only**. SSL (HTTPS) MUST be enforced. The footer MUST contain legal details and policy links. The site's Lighthouse scores for performance, SEO, and accessibility MUST be ≥ 90.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Compliance (NON-NEGOTIABLE)
+The website MUST pass a strict compliance checklist. This includes: visible PKR pricing, all mandatory policies published, a functional demo checkout, and correct legal company details displayed. The settlement bank account name MUST exactly match the SECP entity name. There MUST be no "red flag" terms (e.g., *crypto, forex, wallet, trading, donations*) anywhere on the site.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Long-Term Goals
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The project's long-term goals include adding a blog for SEO, supporting multiple languages (Urdu/English), expanding to include e-learning modules, and performing an annual refresh of SEO and compliance standards.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the binding standard for all design, content, and technical development. All feature specifications and implementation plans must demonstrate adherence to these principles. Any new services or significant changes must be reviewed for compliance with merchant onboarding policies before being made live.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 2.0.0 | **Ratified**: 2025-10-04 | **Last Amended**: 2025-10-07

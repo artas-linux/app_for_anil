@@ -1,115 +1,78 @@
-# Feature Specification: [FEATURE NAME]
+# Feature Specification: [WEBSITE FEATURE NAME]
 
 **Feature Branch**: `[###-feature-name]`  
 **Created**: [DATE]  
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
-## User Scenarios & Testing *(mandatory)*
+## 1. Feature Overview & Compliance Mapping *(mandatory)*
 
 <!--
-  IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
-  Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
-  you should still have a viable MVP (Minimum Viable Product) that delivers value.
-  
-  Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
-  Think of each story as a standalone slice of functionality that can be:
-  - Developed independently
-  - Tested independently
-  - Deployed independently
-  - Demonstrated to users independently
+  Describe the website feature to be built (e.g., "Implement the Refund & Cancellation Policy Page," "Create the Product Showcase," "Build the Demo Checkout Flow").
+  Crucially, explain how this feature directly supports the principles of the Merchant-Ready Website Blueprint Constitution.
 -->
 
-### User Story 1 - [Brief Title] (Priority: P1)
+**Feature Description**: [A clear, concise summary of the feature and its purpose]
 
-[Describe this user journey in plain language]
+**Constitutional Principle(s) Supported**:
+- [ ] **I. Low-Risk Business Model**: [Explain how this feature avoids high-risk activities]
+- [ ] **II. Mandatory Site Structure & Content**: [e.g., "This feature implements the mandatory 'Refund Policy' page"]
+- [ ] **III. Clear & Transparent Pricing**: [e.g., "This feature will display product prices in PKR as required"]
+- [ ] **IV. Compliance-First Documentation**: [e.g., "This feature makes the privacy policy accessible"]
+- [ ] **V. Technical & Checkout Readiness**: [e.g., "This feature builds the required sandbox checkout page"]
 
-**Why this priority**: [Explain the value and why it has this priority level]
-
-**Independent Test**: [Describe how this can be tested independently - e.g., "Can be fully tested by [specific action] and delivers [specific value]"]
-
-**Acceptance Scenarios**:
-
-1. **Given** [initial state], **When** [action], **Then** [expected outcome]
-2. **Given** [initial state], **When** [action], **Then** [expected outcome]
-
----
-
-### User Story 2 - [Brief Title] (Priority: P2)
-
-[Describe this user journey in plain language]
-
-**Why this priority**: [Explain the value and why it has this priority level]
-
-**Independent Test**: [Describe how this can be tested independently]
-
-**Acceptance Scenarios**:
-
-1. **Given** [initial state], **When** [action], **Then** [expected outcome]
-
----
-
-### User Story 3 - [Brief Title] (Priority: P3)
-
-[Describe this user journey in plain language]
-
-**Why this priority**: [Explain the value and why it has this priority level]
-
-**Independent Test**: [Describe how this can be tested independently]
-
-**Acceptance Scenarios**:
-
-1. **Given** [initial state], **When** [action], **Then** [expected outcome]
-
----
-
-[Add more user stories as needed, each with an assigned priority]
-
-### Edge Cases
+## 2. Acceptance Criteria & Test Scenarios *(mandatory)*
 
 <!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right edge cases.
+  Define the specific, testable outcomes for this feature. The focus is on compliance and functionality as perceived by a payment gateway's review team.
 -->
 
-- What happens when [boundary condition]?
-- How does system handle [error scenario]?
+### Scenario 1: [e.g., Reviewer Checks Refund Policy Page]
 
-## Requirements *(mandatory)*
+- **Given** a user navigates to the `/refund-policy` URL
+- **When** the page loads
+- **Then** the page MUST display the full text of the refund and cancellation policy
+- **And** the content MUST be easily readable on both desktop and mobile devices
+- **And** the page MUST include a link back to the homepage
+
+### Scenario 2: [e.g., User Adds a Product to the Cart]
+
+- **Given** a user is on the `/products` page
+- **When** they click the "Add to Cart" button for the "Starter Website" package
+- **Then** the item MUST be added to their shopping cart
+- **And** the cart total MUST reflect the correct PKR price (e.g., 65,000 PKR)
+
+---
+*[Add more scenarios as needed to cover all aspects of the feature]*
+
+## 3. Core Requirements *(mandatory)*
 
 <!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right functional requirements.
+  List the non-negotiable requirements for this feature, derived directly from the constitution. This serves as a checklist during development and review.
 -->
 
-### Functional Requirements
+### Content & Functional Requirements
 
-- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
-- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
-- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
-- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **REQ-001**: All pricing information MUST be displayed in PKR.
+- **REQ-002**: All required legal text (e.g., for policies) MUST be implemented exactly as specified.
+- **REQ-003**: The feature MUST NOT contain any "red flag" keywords (e.g., crypto, forex, top-up).
+- **REQ-004**: If this feature is a page, it MUST be linked from the website's main footer.
+- **REQ-005**: All forms (e.g., contact, checkout) MUST use a professional business email for notifications (e.g., `support@yourdomain.com`), not a personal email.
 
-*Example of marking unclear requirements:*
+### Technical Requirements
 
-- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
-- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+- **REQ-006**: The feature/page MUST be served over HTTPS.
+- **REQ-007**: The feature MUST be fully functional and contain no "coming soon" or placeholder content.
+- **REQ-008**: The page MUST include a cookie consent banner if not already implemented globally.
 
-### Key Entities *(include if feature involves data)*
-
-- **[Entity 1]**: [What it represents, key attributes without implementation]
-- **[Entity 2]**: [What it represents, relationships to other entities]
-
-## Success Criteria *(mandatory)*
+## 4. Success Criteria *(mandatory)*
 
 <!--
-  ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
+  Define what success looks like for this specific feature in the context of getting merchant approval.
 -->
 
 ### Measurable Outcomes
 
-- **SC-001**: [Measurable metric, e.g., "Users can complete account creation in under 2 minutes"]
-- **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
-- **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
-- **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+- **SC-001**: The implemented feature fully satisfies all checklist items from the "Merchant-Ready Website Blueprint" that are relevant to it.
+- **SC-002**: The feature is visually and functionally complete, presenting a professional and trustworthy image.
+- **SC-003**: A manual review of the feature would raise no compliance red flags for a payment gateway onboarding team.
