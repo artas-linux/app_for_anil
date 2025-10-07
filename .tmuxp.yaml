@@ -1,0 +1,11 @@
+start_directory: /home/archbtw/dev/projects/app_for_anil
+session_name: app_for_anil
+windows:
+  - window_name: editor
+    panes:
+      - shell_command:
+          - nvim
+  - window_name: service
+    panes:
+      - shell_command:
+          - five-server
