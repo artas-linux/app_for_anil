@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sample invoice from DevSolutions - Professional IT services in Pakistan">
+  <title>Sample Invoice - DevSolutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .invoice-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 30px;
+      border: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .invoice-header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 20px;
+    }
+    
+    .invoice-company-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    .invoice-details {
+      text-align: right;
+    }
+    
+    .invoice-title {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .invoice-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .invoice-table th, .invoice-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    
+    .invoice-table th {
+      background-color: #f5f5f5;
+    }
+    
+    .invoice-totals {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .invoice-totals tr td {
+      padding: 10px;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+    
+    .total-row {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    
+    .invoice-footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>DevSolutions</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Invoice Content -->
+  <div class="container">
+    <div class="invoice-container">
+      <div class="invoice-header">
+        <h1 class="invoice-title">INVOICE</h1>
+        <div class="invoice-company-info">
+          <div class="company-details">
+            <h2>DevSolutions</h2>
+            <p>123 Business Avenue</p>
+            <p>Karachi, Sindh 75650</p>
+            <p>Pakistan</p>
+            <p>NTN: 1234567-8</p>
+            <p>SECP Reg: 1234567</p>
+          </div>
+          <div class="invoice-details">
+            <p><strong>Invoice #:</strong> DSV-2025-001</p>
+            <p><strong>Date:</strong> October 8, 2025</p>
+            <p><strong>Due Date:</strong> October 15, 2025</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="invoice-client-info">
+        <h3>Bill To:</h3>
+        <p><strong>ABC Company Ltd.</strong></p>
+        <p>456 Business Road</p>
+        <p>Lahore, Punjab 54000</p>
+        <p>Pakistan</p>
+      </div>
+      
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Hours/Quantity</th>
+            <th>Rate</th>
+            <th>Amount (PKR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Website Development Consultation - 1 hour session</td>
+            <td>1</td>
+            <td>2,500</td>
+            <td>2,500</td>
+          </tr>
+          <tr>
+            <td>API Integration Planning</td>
+            <td>2</td>
+            <td>3,000</td>
+            <td>6,000</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <table class="invoice-totals">
+        <tr>
+          <td></td>
+          <td><strong>Subtotal:</strong></td>
+          <td>PKR 8,500</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Sales Tax (17%):</td>
+          <td>PKR 1,445</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="total-row">Total:</td>
+          <td class="total-row">PKR 9,945</td>
+        </tr>
+      </table>
+      
+      <div class="invoice-footer">
+        <p>Payment Terms: Payment due within 7 days of invoice date</p>
+        <p>Payment Methods: Bank Transfer, EasyPaisa, JazzCash, Credit Card</p>
+        <p>Questions about this invoice? Contact us at billing@devsolutions.pk</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>DevSolutions</h3>
+          <p>Professional IT services for businesses in Pakistan.</p>
+          <p><strong>Legal:</strong> SECP Registration #1234567<br>NTN: 1234567-8</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal Pages</h4>
+          <ul>
+            <li><a href="policies/refund.html">Refund Policy</a></li>
+            <li><a href="policies/delivery.html">Delivery Policy</a></li>
+            <li><a href="policies/privacy.html">Privacy Policy</a></li>
+            <li><a href="policies/aup.html">Acceptable Use Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: support@devsolutions.pk</p>
+          <p>Phone: +92-300-1234567</p>
+          <p>Address: 123 Business Avenue, Karachi, Pakistan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DevSolutions. All rights reserved. SECP Registered Entity #1234567 | NTN: 1234567-8</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

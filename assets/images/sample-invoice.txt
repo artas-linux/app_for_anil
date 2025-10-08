@@ -1,0 +1,22 @@
+Invoice Example:
+================================
+DevSolutions
+123 Business Avenue, Karachi, Pakistan
+NTN: 1234567-8
+Invoice #: DSV-2025-001
+Date: October 8, 2025
+
+Bill To:
+[Client Name]
+[Client Address]
+
+Description:
+Website Development Consultation
+One-hour consultation session
+
+Amount: PKR 2,500
+Tax (17%): PKR 425
+Total: PKR 2,925
+
+Payment Status: Pending
+================================

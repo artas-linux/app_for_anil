@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout demo page for DevSolutions - Test payment process for IT services">
+  <title>Checkout - DevSolutions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>DevSolutions</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Checkout Hero Section -->
+  <section class="checkout-hero">
+    <div class="container">
+      <h1>Checkout</h1>
+      <p>Complete your purchase with our secure payment system</p>
+    </div>
+  </section>
+
+  <!-- Checkout Content -->
+  <section class="checkout-content">
+    <div class="container">
+      <div class="checkout-container">
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="order-item">
+            <div class="item-info">
+              <h3>Website Development Consultation</h3>
+              <p>One-hour consultation session to discuss your project requirements</p>
+            </div>
+            <div class="item-price">PKR 2,500</div>
+          </div>
+          
+          <div class="order-totals">
+            <div class="total-row">
+              <span>Subtotal:</span>
+              <span>PKR 2,500</span>
+            </div>
+            <div class="total-row">
+              <span>Tax (17%):</span>
+              <span>PKR 425</span>
+            </div>
+            <div class="total-row total-amount">
+              <span>Total:</span>
+              <span>PKR 2,925</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout Form -->
+        <div class="checkout-form">
+          <form id="checkout-form">
+            <h2>Customer Information</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <h2>Service Details</h2>
+            <div class="form-group">
+              <label for="project-details">Project Requirements</label>
+              <textarea id="project-details" name="project-details" rows="4" placeholder="Briefly describe the service you need..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="preferred-contact">Preferred Contact Method</label>
+              <select id="preferred-contact" name="preferred-contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+            
+            <h2>Payment Information</h2>
+            <div class="payment-methods">
+              <div class="payment-option">
+                <input type="radio" id="easypaisa" name="payment-method" value="easypaisa" checked>
+                <label for="easypaisa">EasyPaisa</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="jazzcash" name="payment-method" value="jazzcash">
+                <label for="jazzcash">JazzCash</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                <label for="bank-transfer">Bank Transfer</label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                <label for="credit-card">Credit/Debit Card</label>
+              </div>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the <a href="policies/refund.html">Refund Policy</a>, <a href="policies/privacy.html">Privacy Policy</a>, and <a href="policies/aup.html">Acceptable Use Policy</a></label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Complete Payment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Notice -->
+  <section class="security-notice">
+    <div class="container">
+      <div class="security-content">
+        <h3>Secure Payment Process</h3>
+        <p>Our payment system uses industry-standard encryption to protect your information. All transactions are processed through licensed payment providers in compliance with State Bank of Pakistan regulations.</p>
+        <div class="security-badges">
+          <div class="security-badge">🔒 SSL Encrypted</div>
+          <div class="security-badge">🔐 PCI DSS Compliant</div>
+          <div class="security-badge">🛡️ Secure Payment Gateway</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>DevSolutions</h3>
+          <p>Professional IT services for businesses in Pakistan.</p>
+          <p><strong>Legal:</strong> SECP Registration #1234567<br>NTN: 1234567-8</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal Pages</h4>
+          <ul>
+            <li><a href="policies/refund.html">Refund Policy</a></li>
+            <li><a href="policies/delivery.html">Delivery Policy</a></li>
+            <li><a href="policies/privacy.html">Privacy Policy</a></li>
+            <li><a href="policies/aup.html">Acceptable Use Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: support@devsolutions.pk</p>
+          <p>Phone: +92-300-1234567</p>
+          <p>Address: 123 Business Avenue, Karachi, Pakistan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DevSolutions. All rights reserved. SECP Registered Entity #1234567 | NTN: 1234567-8</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
