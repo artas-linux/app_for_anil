@@ -12,7 +12,7 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <h1>DevSolutions</h1>
+        <div>DevSolutions</div>
       </div>
       <nav class="navigation">
         <ul>
@@ -20,7 +20,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="mobile-menu-toggle">
           <span></span>
@@ -31,148 +31,53 @@
     </div>
   </header>
 
-  <!-- Contact Hero Section -->
-  <section class="contact-hero">
+  <!-- New Contact Section -->
+  <section class="contact-section">
     <div class="container">
-      <h1>Contact Us</h1>
-      <p>Get in touch with our team for quotations, support, or general inquiries</p>
-    </div>
-  </section>
-
-  <!-- Contact Content -->
-  <section class="contact-content">
-    <div class="container">
-      <div class="contact-container">
-        <!-- Contact Information -->
+      <div class="contact-header">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you. Please fill out the form below or contact us using the details provided.</p>
+      </div>
+      <div class="contact-body">
         <div class="contact-info">
-          <h2>Get In Touch</h2>
-          
-          <div class="contact-method">
-            <div class="contact-icon">📞</div>
-            <div class="contact-details">
-              <h3>Phone</h3>
-              <p>+92-300-1234567</p>
-              <p>Mon-Fri: 9:00 AM - 5:00 PM (PKT)</p>
-            </div>
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <strong>Email:</strong>
+            <p>support@devsolutions.pk</p>
           </div>
-          
-          <div class="contact-method">
-            <div class="contact-icon">✉️</div>
-            <div class="contact-details">
-              <h3>Email</h3>
-              <p>General Inquiries: <a href="mailto:info@devsolutions.pk">info@devsolutions.pk</a></p>
-              <p>Support: <a href="mailto:support@devsolutions.pk">support@devsolutions.pk</a></p>
-              <p>Billing: <a href="mailto:billing@devsolutions.pk">billing@devsolutions.pk</a></p>
-            </div>
+          <div class="info-item">
+            <strong>Phone:</strong>
+            <p>+92-300-1234567</p>
           </div>
-          
-          <div class="contact-method">
-            <div class="contact-icon">📍</div>
-            <div class="contact-details">
-              <h3>Office Address</h3>
-              <p>123 Business Avenue</p>
-              <p>Karachi, Sindh 75650</p>
-              <p>Pakistan</p>
-            </div>
+          <div class="info-item">
+            <strong>Address:</strong>
+            <p>123 Business Avenue, Karachi, Pakistan</p>
           </div>
-          
-          <div class="contact-method">
-            <div class="contact-icon">🕒</div>
-            <div class="contact-details">
-              <h3>Business Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p>Saturday: 10:00 AM - 2:00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
-          </div>
-          
-          <div class="contact-method">
-            <div class="contact-icon">🏢</div>
-            <div class="contact-details">
-              <h3>Response Time</h3>
-              <p>General Inquiries: Within 24 hours</p>
-              <p>Support Requests: Within 4 hours during business hours</p>
-              <p>Escalated Issues: Within 1 hour (business hours)</p>
-            </div>
+          <div class="info-item">
+            <strong>Business Hours:</strong>
+            <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
           </div>
         </div>
-        
-        <!-- Contact Form -->
-        <div class="contact-form">
-          <h2>Send Us a Message</h2>
-          <form id="contact-form">
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form" onsubmit="return submitContactForm(event);">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
             </div>
-            
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" required placeholder="e.g. john.doe@example.com">
             </div>
-            
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-            
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required>
+              <input type="text" id="subject" name="subject" placeholder="e.g. Quotation for a new website">
             </div>
-            
             <div class="form-group">
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" required placeholder="Please describe your requirements or inquiry..."></textarea>
             </div>
-            
-            <div class="form-group checkbox-group">
-              <input type="checkbox" id="consent" name="consent" required>
-              <label for="consent">I agree to the <a href="policies/privacy.html">Privacy Policy</a> and consent to my data being processed</label>
-            </div>
-            
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
-        </div>
-      </div>
-      
-      <!-- Office Location Map -->
-      <div class="map-section">
-        <h2>Our Location</h2>
-        <div class="map-container">
-          <!-- This would be replaced with an actual map in a real implementation -->
-          <div class="map-placeholder">
-            <p>123 Business Avenue, Karachi, Sindh 75650, Pakistan</p>
-            <div class="map-image">
-              <img src="assets/images/office-map.jpg" alt="Office location map showing DevSolutions location in Karachi">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Support Section -->
-  <section class="support-section">
-    <div class="container">
-      <h2>Support Resources</h2>
-      <div class="support-grid">
-        <div class="support-item">
-          <h3>Documentation</h3>
-          <p>Find guides and tutorials for our services in our documentation section.</p>
-          <a href="#" class="btn btn-secondary">View Docs</a>
-        </div>
-        
-        <div class="support-item">
-          <h3>FAQ</h3>
-          <p>Check out our frequently asked questions for quick answers to common issues.</p>
-          <a href="#" class="btn btn-secondary">View FAQ</a>
-        </div>
-        
-        <div class="support-item">
-          <h3>Escalation Contacts</h3>
-          <p>For urgent matters, contact our management team directly.</p>
-          <a href="mailto:management@devsolutions.pk" class="btn btn-secondary">Contact Management</a>
         </div>
       </div>
     </div>
@@ -194,7 +99,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-section">
